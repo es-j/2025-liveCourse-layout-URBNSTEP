@@ -1,4 +1,40 @@
 .header{
-  background: #69F0AE;
-  font-size: 64px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .header-nav {
+    display: flex;
+    gap: 48px;
+  }
+  h1 a {
+    background: url(../assets/images/logo.svg) no-repeat;
+    width: 129px;
+    height: 46px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  ul {
+    display: flex;
+    gap: 40px;
+    a {
+      padding: 12px 0;
+      color: $neutral-900;
+      font-weight: $weight-medium;
+      &:hover {
+        color: $neutral-600;
+      }
+      &:focus {
+        color: $neutral-900;
+        padding-bottom: 10px;
+        border-bottom: 2px solid;
+      }
+    }
+  }
+  i {
+    color: $neutral-900;
+    padding: 12px;
+  }
 }
