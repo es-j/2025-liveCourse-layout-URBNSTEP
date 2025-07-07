@@ -1,0 +1,84 @@
+.brand-story {
+  margin-bottom: 64px;
+
+  .banner {
+    margin-bottom: 64px;
+    position: relative;
+
+    &-text-center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    span {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  .hero-text {
+    padding: 32px 0;
+    margin-bottom: 48px;
+  }
+
+  section {
+    padding-bottom: 48px;
+    border-bottom: 1px solid $neutral-300;
+
+    h3 {
+      margin-top: 48px;
+      margin-bottom: 24px;
+    }
+  }
+
+  .intro {
+    h3 {
+      margin-top: 24px;
+    }
+    p {
+      margin-top: 16px;
+    }
+  }
+
+  .history li {
+    margin-bottom: 12px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    &::before {
+      content: "•";
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      margin-right: -4px;
+    }
+    time {
+      padding-right: 8px;
+      border-right: 1px solid $neutral-900;
+      margin-right: 4px;
+    }
+  }
+
+  .philosophy li {
+    margin-bottom: 12px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    padding-left: 12px;
+    border-left: 3px solid $neutral-300;
+  }
+
+  .story {
+    li {
+      padding-top: 8px;
+      padding-bottom: 8px;
+    }
+    span {
+      display: inline-block;
+      padding-bottom: 3px;
+      border-bottom: 1px solid;
+    }
+  }
+}
