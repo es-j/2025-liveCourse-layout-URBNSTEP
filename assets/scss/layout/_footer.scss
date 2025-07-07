@@ -1,4 +1,36 @@
 .footer{
   padding-top: 64px;
   padding-bottom: 64px;
+  .footer-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    ul {
+      display: flex;
+      gap: 40px;
+      a {
+        padding: 12px 0;
+        color: $neutral-900;
+        font-weight: $weight-medium;
+        &:hover {
+          color: $neutral-600;
+        }
+        &:focus {
+          color: $neutral-900;
+          padding-bottom: 10px;
+          border-bottom: 2px solid;
+        }
+      }
+    }
+  }
+  .copyright {
+    padding-top: 31px;
+    border-top: 1px solid $neutral-300;
+    p {
+      padding-bottom: 4px;
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
 }
