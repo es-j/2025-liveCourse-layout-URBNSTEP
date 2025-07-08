@@ -1,6 +1,4 @@
 .breadcrumb {
-  padding-top: 32px;
-  padding-bottom: 24px;
   display: flex;
   font-weight: $weight-medium;
 }
@@ -48,6 +46,7 @@
   color: $white;
   background: $neutral-900;
   border-radius: $radius-sm;
+  border: 1px solid $neutral-900;
   font-weight: $weight-medium;
   &:hover {
     background: $neutral-700;
@@ -55,5 +54,78 @@
   &:focus {
     background: $neutral-700;
     box-shadow: 0px 0px 0px 3px #2125291A;
+  }
+}
+
+.btn-neutral-outlined {
+  padding: 12px 24px;
+  color: $neutral-900;
+  background: $white;
+  border-radius: $radius-sm;
+  border: 1px solid $neutral-900;
+  font-weight: $weight-medium;
+  &:hover {
+    color: $white;
+    background: $neutral-900;
+  }
+  &:focus {
+    color: $white;
+    background: $neutral-900;
+    box-shadow: 0px 0px 0px 3px #2125291A;
+  }
+}
+
+.option {
+  padding: 12px 24px;
+  color: $neutral-900;
+  background: $white;
+  border-radius: $radius-sm;
+  border: 1px solid $neutral-300;
+  font-weight: $weight-medium;
+  font-size: 16px;
+  line-height: 1.5;
+  &:hover {
+    border: 1px solid $neutral-600;
+  }
+  &:focus, &.active {
+    border: 1px solid $neutral-900;
+  }
+  &.disabled {
+    color: $neutral-300;
+    pointer-events: none;
+  }
+}
+
+.img-option {
+  width: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: $white;
+  border: none;
+  padding: 0;
+  span {
+    font-size: 16px;
+    line-height: 1.5;
+    color: $neutral-600;
+    font-weight: $weight-medium;
+  }
+  &:hover {
+    img {
+      opacity: 0.8;
+    }
+  }
+  &:focus {
+    img {
+      border: 1px solid $neutral-900;
+      opacity: 1;
+    }
+    span {
+      color: $neutral-900;
+    }
+  }
+  &.disabled {
+    opacity: 0.4;
+    pointer-events: none;
   }
 }
