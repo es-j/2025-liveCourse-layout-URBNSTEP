@@ -31,7 +31,10 @@
   a {
     color: $neutral-900;
     padding: 8px 15px;
-    &.active, &:hover {
+    &:hover {
+      background: $neutral-100;
+    }
+    &.active {
       background: $primary-300;
     }
     &.disabled {
@@ -76,6 +79,7 @@
 }
 
 .option {
+  width: 160px;
   padding: 12px 24px;
   color: $neutral-900;
   background: $white;
