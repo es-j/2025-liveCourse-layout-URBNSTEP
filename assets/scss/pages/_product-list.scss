@@ -1,0 +1,45 @@
+.product-list {
+  h2 {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    margin-bottom: 24px;
+  }
+  aside {
+    li {
+      padding-right: 24px;
+    }
+    a {
+      width: 172px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-right: 24px;
+      color: $neutral-900;
+      &.active, &:hover {
+        color: $primary-400;
+      }
+    }
+  }
+}
+
+.product-list-main {
+  margin-bottom: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+  li {
+    width: calc((100% - 24px *2) / 3);
+  }
+  a {
+    color: $neutral-900;
+    &:hover {
+      color: $neutral-600;
+    }
+  }
+  img {
+    margin-bottom: 12px;
+  }
+  h3 {
+    margin-bottom: 4px;
+  }
+}

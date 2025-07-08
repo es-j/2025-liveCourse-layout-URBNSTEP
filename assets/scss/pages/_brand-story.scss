@@ -84,6 +84,12 @@
       padding-top: 8px;
       padding-bottom: 8px;
     }
+    a {
+      color: $primary-400;
+      &:hover {
+        color: $primary-500;
+      }
+    }
     span {
       display: inline-block;
       padding-bottom: 3px;

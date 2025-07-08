@@ -4,6 +4,7 @@
 @import "./variables";
 @import "./text";
 @import "./color";
+@import "./components";
 
 @import "./base/reset";
 @import "./base/base";
@@ -13,3 +14,4 @@
 
 @import "./pages/index.scss";
 @import "./pages/brand-story";
+@import "./pages/product-list"
