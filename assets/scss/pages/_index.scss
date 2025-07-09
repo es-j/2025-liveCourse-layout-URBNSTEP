@@ -1,3 +1,130 @@
-.index-title {
-  font-size: 100px;
+.index {
+  span {
+    display: inline-block;
+  }
+  .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // height: 800px;
+    height: calc( 100vh - 80px);
+    background: url("../assets/images/index/banner.png") no-repeat center;
+    background-size: cover;
+  }
+  .banner-text {
+    margin-left: 200px;
+    h2 {
+      margin-bottom: 16px;
+    }
+    h3 {
+      margin-bottom: 48px;
+    }
+  }
+  .new-arrival {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    h4 {
+      margin-bottom: 32px;
+      span {
+        margin-top: 12px;
+      }
+    }
+    ul {
+      flex-wrap: wrap;
+      row-gap: 40px;
+    }
+    a {
+      color: $neutral-900;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    img {
+      margin-bottom: 12px;
+    }
+    h5 {
+      margin-bottom: 4px;
+    }
+  }
+  .best-seller {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    h4 {
+      margin-bottom: 16px;
+    }
+    li {
+      position: relative;
+    }
+    a:hover{
+      opacity: 0.8;
+    }
+    .badge {
+      padding: 8px 12px;
+      position: absolute;
+      left: 12px;
+    }
+  }
+  .sale {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url("../assets/images/index/banner-co-branded.png") no-repeat center;
+    background-size: cover;
+    height: 470px;
+    h2 {
+      margin-bottom: 16px;
+    }
+    h3 {
+      margin-bottom: 32px;
+    }
+    span {
+      color: $primary-300;
+    }
+    p {
+      margin-bottom: 48px;
+    }
+  }
+  .series {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    h4 {
+      margin-bottom: 16px;
+    }
+    a {
+      color: $white;
+      position: relative;
+    }
+    img {
+      opacity: 0.4#000000;
+    }
+    .title-on-img {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      background: #00000066;
+      &:hover {
+        color: $neutral-900;
+        background: $primary-200;
+      }
+    }
+  }
+  .style {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    h4 {
+      margin-bottom: 16px;
+    }
+    .style-content {
+      max-width: 100%;
+    }
+    .small-img img {
+      width: calc((100% - 8px)/2);
+    }
+  }
 }

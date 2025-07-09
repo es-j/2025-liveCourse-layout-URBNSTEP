@@ -44,6 +44,22 @@
   }
 }
 
+.btn-primary {
+  padding: 12px 24px;
+  color: $neutral-900;
+  background: $primary-300;
+  border-radius: $radius-sm;
+  border: 1px solid $primary-300;
+  font-weight: $weight-medium;
+  &:hover {
+    color: $primary-500;
+  }
+  &:focus {
+    color: $primary-500;
+    box-shadow: 0px 0px 0px 3px $primary-300;
+  }
+}
+
 .btn-neutral-filled {
   padding: 12px 24px;
   color: $white;
