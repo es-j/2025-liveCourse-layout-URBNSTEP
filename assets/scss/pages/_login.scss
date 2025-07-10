@@ -1,0 +1,44 @@
+.login {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.login-block-bg {
+  background: url("../assets/images/login/login-bg.png");
+  border-radius: $radius-md;
+}
+.login-block-text{
+  padding: 120px 80px;
+  h2 {
+    margin-bottom: 32px;
+  }
+}
+.login-or-signup{
+  margin-bottom: 32px;
+  display: flex;
+  a {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    flex: 1;
+    border-bottom: 2px solid $neutral-300;
+    &:hover, &.active {
+      color: $neutral-900;
+      border-bottom: 2px solid $neutral-900;
+    }
+  }
+}
+.ways-to-login {
+  width: 100%;
+  color: $neutral-900;
+  background: $white;
+  border: 1px solid $neutral-300;
+  padding: 12px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  img {
+    margin-right: 12px;
+  }
+  &:hover {
+    color: $primary-400;
+  }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>品牌故事 Brand Story | URBNSTEP</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <div class="login container">
+      <div class="row d-flex">
+        <div class="col-5">
+          <img
+            src="../assets/images/login/login.png"
+            alt="URBNSTEP Your Step, Your Statement"
+          />
+        </div>
+        <div class="col-7 login-block-bg">
+          <div class="login-block-text">
+            <h2 class="title fz-7 text-center">歡迎！</h2>
+            <div class="login-or-signup">
+              <a href="#" class="text-primary text-center active">登入</a>
+              <a href="#" class="text-secondary text-center">註冊</a>
+            </div>
+            <ul>
+              <li>
+                <a href="#" class="ways-to-login">
+                  <img
+                    src="../assets//images/login/facebook.svg"
+                    alt="Facebook"
+                  />Facebook 登入
+                </a>
+              </li>
+              <li>
+                <a href="#" class="ways-to-login">
+                  <img
+                    src="../assets//images/login/apple.svg"
+                    alt="Apple"
+                  />Apple 登入
+                </a>
+              </li>
+              <li>
+                <a href="#" class="ways-to-login">
+                  <img
+                    src="../assets//images/login/google.svg"
+                    alt="Google"
+                  />Google 登入
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
