@@ -14,7 +14,8 @@ body {
 .container {
   max-width: 1320px;
   margin: 0 auto;
-  padding: 0 12px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 a {
@@ -35,6 +36,15 @@ img {
 
 .d-flex {
   display: flex;
+}
+
+@media (max-width: 768px) {
+  .d-md-flex {
+    display: flex;
+  }
+  .d-md-none {
+    display: none;
+  }
 }
 
 .mr-2 {
@@ -119,6 +129,21 @@ img {
   width: 100%;
   padding-right: 12px;
   padding-left: 12px;
+}
+
+@media (max-width: 768px) {
+  .col-md-1 {
+    width: calc(100% / 4 * 1);
+  }
+  .col-md-2 {
+    width: calc(100% / 4 * 2);
+  }
+  .col-md-3 {
+    width: calc(100% / 4 * 3);
+  }
+  .col-md-4 {
+    width: calc(100%);
+  }
 }
 
 .rounded-sm {
