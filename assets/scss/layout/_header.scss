@@ -1,11 +1,15 @@
 .header{
   padding-top: 16px;
   padding-bottom: 16px;
-  display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 768px) {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
   .header-nav {
-    display: flex;
     gap: 48px;
   }
   h1 a {
@@ -17,7 +21,6 @@
     white-space: nowrap;
   }
   ul {
-    display: flex;
     gap: 40px;
     a {
       padding: 12px 0;
