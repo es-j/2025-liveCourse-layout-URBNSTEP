@@ -25,12 +25,38 @@
     border-bottom: 1px solid $neutral-300;
     margin-bottom: 32px;
   }
+
+  @media (max-width: 768px) {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    h2 {
+      margin-bottom: 24px;
+      font-size: 24px;
+      i {
+        font-size: 20px;
+      }
+      i::before {
+        padding: 6px;
+      }
+    }
+    .note {
+      margin-bottom: 24px;
+      p {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    li {
+      margin-bottom: 24px;
+    }
+  }
+
 }
 .favorites-item{
   display: flex;
   img {
     width: 120px;
-    margin-right: 12px;
+    margin-right: 16px;
   }
 }
 .favorites-item-info {
@@ -44,5 +70,16 @@
   }
   &:hover {
     color: $primary-400;
+  }
+  @media (max-width: 768px) {
+    h3 {
+      font-size: 16px;
+    }
+    p {
+      font-size: 14px;
+    }
+    h4 {
+      text-align: start;
+    }
   }
 }
