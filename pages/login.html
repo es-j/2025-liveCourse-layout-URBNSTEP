@@ -10,19 +10,26 @@
     <%- include('./layout/header'); -%>
 
     <div class="login container">
-      <div class="row d-flex">
-        <div class="col-5">
-          <img
-            src="../assets/images/login/login.png"
-            alt="URBNSTEP Your Step, Your Statement"
-          />
+      <div class="row d-flex flex-wrap">
+        <div class="col-5 col-md-4">
+          <picture>
+            <source
+              srcset="../assets/images/login/login-sm.png"
+              media="(max-width: 768px)"
+            />
+            <img
+              src="../assets/images/login/login.png"
+              alt="URBNSTEP Your Step, Your Statement"
+              class="login-img"
+            />
+          </picture>
         </div>
-        <div class="col-7 login-block-bg">
-          <div class="login-block-text">
+        <div class="col-7 col-md-4">
+          <div class="login-block-bg login-block-text">
             <h2 class="title fz-7 text-center">歡迎！</h2>
             <div class="login-or-signup">
-              <a href="#" class="text-primary text-center active">登入</a>
-              <a href="#" class="text-secondary text-center">註冊</a>
+              <a href="#" class="title text-primary text-center active">登入</a>
+              <a href="#" class="title text-secondary text-center">註冊</a>
             </div>
             <ul>
               <li>

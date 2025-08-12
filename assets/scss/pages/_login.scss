@@ -1,15 +1,36 @@
 .login {
   padding-top: 64px;
   padding-bottom: 64px;
+  @media (max-width: 768px) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+.login-img {
+  @media (max-width: 768px) {
+    max-width: none;
+    width: calc(100% + 24px);
+    margin-left: -12px;
+  }
 }
 .login-block-bg {
   background: url("../images/login/login-bg.png");
   border-radius: $radius-md;
+  @media (max-width: 768px) {
+    background: none;
+  }
 }
 .login-block-text{
   padding: 120px 80px;
   h2 {
     margin-bottom: 32px;
+  }
+  @media (max-width: 768px) {
+    padding: 32px 0;
+    h2 {
+      font-size: 24px;
+      margin-bottom: 24px;
+    }
   }
 }
 .login-or-signup{
@@ -24,6 +45,9 @@
       color: $neutral-900;
       border-bottom: 2px solid $neutral-900;
     }
+  }
+  @media (max-width: 768px) {
+    margin-bottom: 24px;
   }
 }
 .ways-to-login {
