@@ -5,4 +5,13 @@
   justify-content: center;
   align-items: center;
   gap: 24px;
+  @media (max-width: 768px) {
+    gap: 16px;
+    h4 {
+      font-size: 20px;
+    }
+    a {
+      padding: 8px 12px;
+    }
+  }
 }
