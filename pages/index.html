@@ -10,6 +10,10 @@
     <%- include('./layout/header'); -%>
 
     <div class="index">
+      <ul class="d-none d-md-flex text-center md-nav">
+        <li><a href="#" class="text-primary bg-primary-200">商品列表</a></li>
+        <li><a href="#" class="text-primary bg-primary-100">品牌故事</a></li>
+      </ul>
       <section class="banner">
         <div class="banner-text">
           <h2 class="title fz-16 text-white">URBNSTEP</h2>
@@ -22,29 +26,29 @@
           New Arrival <br />
           <span class="fz-8">新品上市</span>
         </h4>
-        <ul class="row d-flex">
-          <li class="col-6">
+        <ul class="row d-flex sm-row">
+          <li class="col-6 sm-col-2">
             <a href="#">
               <img src="../assets/images/index/new-1.png" alt="Monoverse" />
               <h5 class="title fz-5">Monoverse</h5>
               <span>NT$3,600</span>
             </a>
           </li>
-          <li class="col-6">
+          <li class="col-6 sm-col-2">
             <a href="product-detail.html">
               <img src="../assets/images/index/new-2.png" alt="PLATFORM 404" />
               <h5 class="title fz-5">PLATFORM 404</h5>
               <span>NT$2,600</span>
             </a>
           </li>
-          <li class="col-6">
+          <li class="col-6 sm-col-2">
             <a href="#">
               <img src="../assets/images/index/new-3.png" alt="URBN Force" />
               <h5 class="title fz-5">URBN Force</h5>
               <span>NT$3,200</span>
             </a>
           </li>
-          <li class="col-6">
+          <li class="col-6 sm-col-2">
             <a href="#">
               <img src="../assets/images/index/new-4.png" alt="Mode90" />
               <h5 class="title fz-5">Mode90</h5>
@@ -55,50 +59,50 @@
       </section>
       <section class="best-seller container">
         <h4 class="title fz-8">熱銷補貨</h4>
-        <ul class="row d-flex">
-          <li class="col-3">
+        <ul class="row d-flex column-md-gap-16 overflow-md-auto ml-md-0">
+          <li class="col-3 d-md-contents">
             <a href="#">
               <img
                 src="../assets/images/product-list/product-3.png"
                 alt="Melty Kiss"
               />
+              <span class="badge fz-3.5 text-highlight bg-primary-100">
+                人氣 No.1
+              </span>
             </a>
-            <span class="badge fz-3.5 text-highlight bg-primary-100">
-              人氣 No.1
-            </span>
           </li>
-          <li class="col-3">
+          <li class="col-3 d-md-contents">
             <a href="product-detail.html">
               <img
                 src="../assets/images/product-list/product.png"
                 alt="PLATFORM 404"
               />
+              <span class="badge fz-3.5 text-highlight bg-primary-100">
+                人氣 No.1
+              </span>
             </a>
-            <span class="badge fz-3.5 text-highlight bg-primary-100">
-              人氣 No.1
-            </span>
           </li>
-          <li class="col-3">
+          <li class="col-3 d-md-contents">
             <a href="#">
               <img
                 src="../assets/images/product-list/product-6.png"
                 alt="R:UNER"
               />
+              <span class="badge fz-3.5 text-highlight bg-primary-100">
+                人氣 No.1
+              </span>
             </a>
-            <span class="badge fz-3.5 text-highlight bg-primary-100">
-              人氣 No.1
-            </span>
           </li>
-          <li class="col-3">
+          <li class="col-3 d-md-contents">
             <a href="#">
               <img
                 src="../assets/images/product-list/product-4.png"
                 alt="BOOMBLOK"
               />
+              <span class="badge fz-3.5 text-highlight bg-primary-100">
+                人氣 No.1
+              </span>
             </a>
-            <span class="badge fz-3.5 text-highlight bg-primary-100">
-              人氣 No.1
-            </span>
           </li>
         </ul>
       </section>
@@ -116,8 +120,8 @@
       </section>
       <section class="series container">
         <h4 class="title fz-8">依系列選購</h4>
-        <ul class="row d-flex">
-          <li class="col-3">
+        <ul class="row sm-row d-flex flex-wrap">
+          <li class="col-3 sm-col-2">
             <a href="#">
               <img
                 src="../assets/images/product-list/product-6.png"
@@ -129,7 +133,7 @@
               </div>
             </a>
           </li>
-          <li class="col-3">
+          <li class="col-3 sm-col-2">
             <a href="#">
               <img
                 src="../assets/images/index/product-11.png"
@@ -141,7 +145,7 @@
               </div>
             </a>
           </li>
-          <li class="col-3">
+          <li class="col-3 sm-col-2">
             <a href="#">
               <img
                 src="../assets/images/product-list/product-4.png"
@@ -153,7 +157,7 @@
               </div>
             </a>
           </li>
-          <li class="col-3">
+          <li class="col-3 sm-col-2">
             <a href="#">
               <img
                 src="../assets/images/index/product-10.png"
@@ -170,9 +174,9 @@
 
       <section class="style container">
         <h4 class="title fz-8">穿搭靈感</h4>
-        <div class="style-content d-flex">
-          <div class="mr-2">
-            <div class="d-flex mb-2 small-img">
+        <div class="d-flex column-md-gap-16 overflow-md-auto style-img-list">
+          <div class="mr-2 d-md-contents">
+            <div class="d-flex mb-2 d-md-contents">
               <img
                 src="../assets/images/index/inspiration-1.png"
                 alt="inspiration-1"
@@ -188,8 +192,8 @@
               alt="inspiration-3"
             />
           </div>
-          <div class="small-img mr-2">
-            <div class="d-flex mb-2">
+          <div class="mr-2 d-md-contents">
+            <div class="d-flex mb-2 d-md-contents">
               <img
                 src="../assets/images/index/inspiration-4.png"
                 alt="inspiration-4"
@@ -200,7 +204,7 @@
                 alt="inspiration-5"
               />
             </div>
-            <div class="d-flex mb-2">
+            <div class="d-flex mb-2 d-md-contents">
               <img
                 src="../assets/images/index/inspiration-6.png"
                 alt="inspiration-6"
@@ -211,7 +215,7 @@
                 alt="inspiration-7"
               />
             </div>
-            <div class="d-flex mb-2">
+            <div class="d-flex mb-2 d-md-contents">
               <img
                 src="../assets/images/index/inspiration-8.png"
                 alt="inspiration-8"
@@ -223,13 +227,13 @@
               />
             </div>
           </div>
-          <div>
+          <div class="d-md-contents">
             <img
               src="../assets/images/index/inspiration-10.png"
               alt="inspiration-10"
               class="mb-2"
             />
-            <div class="d-flex mb-2 small-img">
+            <div class="d-flex mb-2 d-md-contents">
               <img
                 src="../assets/images/index/inspiration-11.png"
                 alt="inspiration-11"

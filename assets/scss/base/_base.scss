@@ -53,6 +53,15 @@ img {
   .d-md-none {
     display: none;
   }
+  .d-md-contents {
+    display: contents;
+  }
+  .column-md-gap-16 {
+    column-gap: 16px;
+  }
+  .overflow-md-auto {
+    overflow-x: auto;
+  }
 }
 
 .flex-wrap {
@@ -155,6 +164,16 @@ img {
   }
   .col-md-4 {
     width: calc(100%);
+  }
+
+  .sm-row {
+    margin-left: -6px;
+    margin-right: -6px;
+  }
+  .sm-col-2 {
+    width: 50%;
+    padding-left: 6px;
+    padding-right: 6px;
   }
 }
 
